@@ -1,1 +1,1 @@
-# quiczar
+# quiz-app
