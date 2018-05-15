@@ -55,27 +55,124 @@
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 
 
-{% if category_list %}
-<ul>
-  {% for category in category_list %}
-  <a href="{% url 'quizzer:startquiz' category.id  %}" method="post">
+
+ {% if category_list %}
+  <a href="{% url 'quizzer:startquiz' 17  %}" method="post">
     <div class="w3-col m3">
       <div class="categ">
-      <img src="../../static/quizzer/{{category.category_text}}.jpg" style="width:100%" class="w3-hover-opacity" alt="Sailing">
-        <div class="text">{{category.category_text}}</div>
+      <img src="https://lh3.googleusercontent.com/RnngmMzpSjulgG68tOnVqF6VmhvPL3kuZypBmKywgus2HJ6UwMa3yJfdOqCBhjI8t0Tq7VlyU3f5p9p_cAxevSzPwXg21cQihoZ_KXbehBzc2mAtSDUaZLn29SVVJdKgeBrgCMuw=w2400" style="width:100%" class="w3-hover-opacity" alt="Anime and Manga">
+        <div class="text">Anime and Manga</div>
       </div>
     </div>
   </a>
-  {% endfor %}
+
+   <a href="{% url 'quizzer:startquiz' 28  %}" method="post">
+    <div class="w3-col m3">
+      <div class="categ">
+      <img src="https://lh3.googleusercontent.com/fDfdwyr97xbgIEtmXgz_sU5o7yN5lYGq7ftmE53KWp_SlnOeF8db7v4PAY0yFh8yJzVslZU4hoEkbX4Y3PsPzS0ENmRcx4tn9nuof8WeuGxBGmWF_yVOJHAy1FGMMDQIU3i4DPZY=w2400" style="width:100%" class="w3-hover-opacity" alt="Art">
+        <div class="text">Art</div>
+      </div>
+    </div>
+  </a>
+
+   <a href="{% url 'quizzer:startquiz' 18  %}" method="post">
+    <div class="w3-col m3">
+      <div class="categ">
+      <img src="https://lh3.googleusercontent.com/_isrme6fvdtK9uiTLFtgHAwyeePPdZ_D13ev3UCnSTVnmn0yxvVmn7r-6QW_marmycHtGKNohpp51oU-gyVb34vOrAqZz2bEm_xttx2v5FvNTp-HrasayNuKtCo7dxVIBWQ1S75a=w2400" style="width:100%" class="w3-hover-opacity" alt="Books">
+        <div class="text">Books</div>
+      </div>
+    </div>
+  </a>
+
+   <a href="{% url 'quizzer:startquiz' 19  %}" method="post">
+    <div class="w3-col m3">
+      <div class="categ">
+      <img src="https://lh3.googleusercontent.com/72DcpPwy2katPasYxXCCIJaFVfU5uN6Me_sssXeBU8AFFHDxjyMHk4GBc7mprfMrkL0IWWlSmCuL307XK4RmjEmDW05M_5fhQdksJ5KDehjpuZIYgrXzZ2lOeg_lMiBw3UdR45ye=w2400" style="width:100%" class="w3-hover-opacity" alt="Computers">
+        <div class="text">Computers</div>
+      </div>
+    </div>
+  </a>
+
+   <a href="{% url 'quizzer:startquiz' 20  %}" method="post">
+    <div class="w3-col m3">
+      <div class="categ">
+      <img src="https://lh3.googleusercontent.com/1RjAylF0uAmhUzspfR02owxV8q0eWTmErsg_yDqNHjktMt112hAeC1OwQlfWk_3ftTqa9Lw1Edbk1lDGq0Blt-YtXNw2tWsIaonBB85SEIyY1lrrh6uIbaql-IWQJmVap7anr5_N=w2400" style="width:100%" class="w3-hover-opacity" alt="Films">
+        <div class="text">Films</div>
+      </div>
+    </div>
+  </a>
+
+   <a href="{% url 'quizzer:startquiz' 21  %}" method="post">
+    <div class="w3-col m3">
+      <div class="categ">
+      <img src="https://lh3.googleusercontent.com/kL7FR0VRUFKlD8DMdY1Yn4z53jG2MIVPi5x1J4wg6hsBrfQ8Cqnp86IuY6rArJM7pS0TFcpsh_l4v3jydwJRkHdeAmcZfhq2AW7GxGxUHbMq3_Gb6H63Fagond0ey7PpurWFZaS6=w2400" style="width:100%" class="w3-hover-opacity" alt="General Knowledge">
+        <div class="text">General Knowledge</div>
+      </div>
+    </div>
+  </a>
+
+   <a href="{% url 'quizzer:startquiz' 22  %}" method="post">
+    <div class="w3-col m3">
+      <div class="categ">
+      <img src="https://lh3.googleusercontent.com/-CL9Ibe3pUMtYIHfDLUZGoVY8dYS9PcKNmqruiYtnOD82sPrddci0YPvpXpFBneGQrpyEA1nh21A_QWhbqSTRQojEEje5w1NFcHlCKSEsQWNfD2ma5V5vHw3T_yJndTi_reENE7p=w2400" style="width:100%" class="w3-hover-opacity" alt="Geography">
+        <div class="text">Geography</div>
+      </div>
+    </div>
+  </a>
+
+   <a href="{% url 'quizzer:startquiz' 23  %}" method="post">
+    <div class="w3-col m3">
+      <div class="categ">
+      <img src="https://lh3.googleusercontent.com/2BKQO_xJAVAY5eVq2DQxK-NvjqvzG80x3T8QJ4sAJWkGUFctuD6NNBABf7JKCNFR6dbzAAWxE7tXNVWlSpPIDQNUIAQ0-4btioKJkp9Vipz9FqGDD5bK6C0KaQ3suVm8hh8F5lke=w2400" style="width:100%" class="w3-hover-opacity" alt="History">
+        <div class="text">History</div>
+      </div>
+    </div>
+  </a>
+
+   <a href="{% url 'quizzer:startquiz' 27  %}" method="post">
+    <div class="w3-col m3">
+      <div class="categ">
+      <img src="https://lh3.googleusercontent.com/9EV1TQLLF28_bRpxVdPkUh_L2KZYbm0Yx0J-ska0UI7Po4kmda187LxfAdfGIq8dmoP3DZOvD8NowZAs4X6Arhhb2MIF9xyw2kf14TVDUtxH_R8ME7ZFILUYHlNihT6DhZMncRJ5=w2400" style="width:100%" class="w3-hover-opacity" alt="Mathematics">
+        <div class="text">Mathematics</div>
+      </div>
+    </div>
+  </a>
+
+   <a href="{% url 'quizzer:startquiz' 24  %}" method="post">
+    <div class="w3-col m3">
+      <div class="categ">
+      <img src="https://lh3.googleusercontent.com/bW4mlsIJkHJ8QOXve4FOyfrfgCHUzl_nrurViOVaWnLLlflxAWozAuef2ihIXpucLxD1SgzsNgD5INNWNlRaOtmda6e0pAeexar5CXFSrpiG79GYgvr9r4yfep3AwV5AEOnb5vFZ=w2400" style="width:100%" class="w3-hover-opacity" alt="Music">
+        <div class="text">Music</div>
+      </div>
+    </div>
+  </a>
+
+   <a href="{% url 'quizzer:startquiz' 25  %}" method="post">
+    <div class="w3-col m3">
+      <div class="categ">
+      <img src="https://lh3.googleusercontent.com/iGpWmXpY3MmT1OvrLTUIxodTeFtfHH8THpml_PWDEfCKGUadTVTyi9uvGsM6GC8c50ujCwK-yRtLY-vFiMxsFYR4Pl6Z6HR2QG1G66U851ZPAs2PhwmmXcW0vQvtJ6b_xNtoP6_D=w2400" style="width:100%" class="w3-hover-opacity" alt="Video Games">
+        <div class="text">Telivision</div>
+      </div>
+    </div>
+  </a>
+
+   <a href="{% url 'quizzer:startquiz' 26  %}" method="post">
+    <div class="w3-col m3">
+      <div class="categ">
+      <img src="https://lh3.googleusercontent.com/GaH7ViXj90vJkjxWGuH1zfWfJYyc6-j4j7ClzDhVCiQ4J32_TWPvL_fHrdnf4Duga_7q0MEgX6CeQOFuCF3kxwD9dhDk9SsT0HKOcxBcmSG1eULKl99WC-o43EEgLxhiQjppSjUK=w2400" style="width:100%" class="w3-hover-opacity" alt="Video Games">
+        <div class="text">Video Games</div>
+      </div>
+    </div>
+  </a>
 
 {% else %}
   <p>No Question Added</p>
- {% endif %}
+ {% endif %} 
+
 
   </div>
 </div>
 
-<!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
@@ -84,7 +181,6 @@
   </div>
 </div>
 
-<!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">

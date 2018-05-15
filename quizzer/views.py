@@ -8,13 +8,11 @@ import random
 score = [0]
 done = {}
 class IndexView(generic.ListView):
-	try:
-		score[0]=0
-	except:
-		pass
 	template_name = 'quizzer/index.html'
 	context_object_name = 'category_list'
 	def get_queryset(self):
+		score[0]=0
+		done.clear()
 		return Category.objects.order_by('category_text')
 class QuestionView(generic.DetailView):
 	model = Question
@@ -22,10 +20,14 @@ class QuestionView(generic.DetailView):
 
 def startquiz(request,category_id):
 	score = [0]
+	print(category_id)
 	question_list = Question.objects.filter(category_id=category_id)
+	print(question_list)
 	if question_list:
 		for query in question_list:
-			return render(request,'quizzer/start.html',{'question':query})
+			if not query.id in done:
+					done[query.id]=1
+					return render(request,'quizzer/detail.html',{'question':query,'score':score[0]})
 	else:
 		return render(request,'quizzer/noquestion.html',{'error_message':"No question added to this topic.",'score':0})
 def quiz(request,question_id):
@@ -39,6 +41,8 @@ def quiz(request,question_id):
 			categ = question.category.id
 			question_list = sorted(Question.objects.filter(category_id=categ), key=lambda x: random.random())
 			score [0] = score [0] + 10
+			if score[0] >= 100:
+				return render(request,'quizzer/win.html',{'score':temporary})
 			for query in question_list:
 				if not query.id in done:
 					done[query.id]=1
