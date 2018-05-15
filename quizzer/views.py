@@ -42,6 +42,9 @@ def quiz(request,question_id):
 			question_list = sorted(Question.objects.filter(category_id=categ), key=lambda x: random.random())
 			score [0] = score [0] + 10
 			if score[0] >= 100:
+				temporary = score [0] 
+				score [0] = 0
+				done.clear()
 				return render(request,'quizzer/win.html',{'score':temporary})
 			for query in question_list:
 				if not query.id in done:
