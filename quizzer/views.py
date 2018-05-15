@@ -53,4 +53,5 @@ def quiz(request,question_id):
 			done.clear()
 			selected_choice = question.choice_set.all()
 			for choice in selected_choice:
-				return render(request,'quizzer/gameover.html',{'correct':choice,'score':temporary})
+				if choice.iscorrect:
+					return render(request,'quizzer/gameover.html',{'correct':choice,'score':temporary})
