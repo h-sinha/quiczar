@@ -4,8 +4,8 @@ A Quiz Portal having Multiple Choice Questions on various topics.
 
 ### Prerequisites
 
--Django 1.11.13 or above.
--Python 2.7 and Python 3 (3.2, 3.4, 3.5, 3.6)
+* Django 1.11.13 or above.
+* Python 2.7 and Python 3 (3.2, 3.4, 3.5, 3.6)
 
 Django installation on Ubuntu:
 ```
