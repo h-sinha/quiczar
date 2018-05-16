@@ -32,7 +32,7 @@ git clone https://github.com/h-sinha/quiczar.git   (OR Download ZIP and Unzip)
 cd quiczar
 python3 manage.py runserver
 ```
-Open localhost:8000 in your web-browser.
+Open localhost:8000 on your web-browser.
 
 ## Built With
 
