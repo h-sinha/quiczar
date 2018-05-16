@@ -28,7 +28,7 @@ Quiczar's directory structure looks as follows::
 ### Installation and Running
 
 ```
-git clone https://github.com/h-sinha/quiczar.git
+git clone https://github.com/h-sinha/quiczar.git   (OR Download ZIP and Unzip)
 cd quiczar
 python3 manage.py runserver
 ```
